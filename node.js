@@ -1,7 +1,7 @@
 const https = require("https");
 
 const options = { hostname: 'https://thing142.glitch.me',
-  port: 3000
+  port: 3000,
   path: '/',
   method: 'GET'
      }

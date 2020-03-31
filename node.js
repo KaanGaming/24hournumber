@@ -10,5 +10,5 @@ setInterval(https.request(options, res => {
   const { statusCode } = res;
   
   if (statusCode == 200) { console.log("200 OK"); }
-  else { console.log(`${statusCode} ERROR`); })
+  else { console.log(`${statusCode} ERROR`); }
 }), 60000);

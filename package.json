@@ -1,6 +1,7 @@
 {
   "name": "24hournumber",
   "version": "1.0.0",
+  "dependencies": [ "http" ],
   "scripts": {
     "start": "node node.js"
   }

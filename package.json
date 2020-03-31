@@ -1,4 +1,7 @@
 {
   "name": "24hournumber",
-  "version": "1.0.0"
+  "version": "1.0.0",
+  "scripts": {
+    "start": "node node.js"
+  }
 }

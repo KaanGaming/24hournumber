@@ -6,9 +6,11 @@ const options = { hostname: 'https://thing142.glitch.me',
   method: 'GET'
      }
 
-setInterval(function () { https.request(options, res => {
+function Request() { https.request(options, res => {
   const { statusCode } = res;
   
   if (statusCode == 200) { console.log("200 OK"); }
   else { console.log(`${statusCode} ERROR`); }
-})}, 60000);
+})}
+
+setInterval(Request, 60000);

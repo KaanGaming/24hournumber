@@ -1,8 +1,12 @@
-const http = require("http");
+const https = require("https");
 
+const options = { hostname: 'https://thing142.glitch.me',
 
+  path: '/',
+  method: 'GET'
+     }
 
-setInterval(http.get("http://thing142.glitch.me/", (res) => {
+setInterval(https.request(options, res) => {
   const { statusCode } = res;
   
   if (statusCode == 200) { console.log("200 OK"); }

@@ -7,7 +7,7 @@ const options = { hostname: 'https://thing142.glitch.me',
      }
 
 function Request() { https.request(options, res => {
-  const { statusCode } = res;
+  const statusCode = res.statusCode;
   
   if (statusCode == 200) { console.log("200 OK"); }
   else { console.log(`${statusCode} ERROR`); }

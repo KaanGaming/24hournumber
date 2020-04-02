@@ -15,4 +15,3 @@ function Request() { https.request(options, res => {
 
 
 Request();
-//setInterval(Request, 60000);

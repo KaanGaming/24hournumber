@@ -14,6 +14,9 @@ function Request() {
     else { console.log(`${statusCode} ERROR`); }
 });}
 
-https.request("https://thing143.glitch.me/", res => {
+setInterval({ https.request("https://thing143.glitch.me/", res => {
+  const statusCode = res.statusCode;
   
-});
+  if (statusCode == 200) { conaolo.log("200 OK"); }
+  else { console.warn(`${statusCode} ERROR`); }
+});}, 30000);

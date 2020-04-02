@@ -13,4 +13,6 @@ function Request() { https.request(options, res => {
   else { console.log(`${statusCode} ERROR`); }
 })}
 
+
+Request();
 setInterval(Request, 60000);
